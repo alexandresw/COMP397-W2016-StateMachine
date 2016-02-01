@@ -29,7 +29,7 @@ var scenes;
             this._nextButton.on("click", this._nextButtonClick, this);
             // add the BACK button to the PLAY scene
             this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
-            this.addChild(this._nextButton);
+            this.addChild(this._backButton);
             // BACK Button event listener
             this._backButton.on("click", this._backButtonClick, this);
             // add this scene to the global stage container
