@@ -15,7 +15,6 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Menu.prototype.start = function () {
-            console.log("Game Started...");
             this._helloLabel = new createjs.Text("Hello World!", "60px Consolas", "#000000");
             this._helloLabel.regX = this._helloLabel.getMeasuredWidth() * 0.5;
             this._helloLabel.regY = this._helloLabel.getMeasuredHeight() * 0.5;

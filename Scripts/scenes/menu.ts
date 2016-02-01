@@ -14,7 +14,6 @@ module scenes {
         
         // Start Method
         public start(): void {
-            console.log("Game Started...");
 
             this._helloLabel = new createjs.Text("Hello World!", "60px Consolas", "#000000");
             this._helloLabel.regX = this._helloLabel.getMeasuredWidth() * 0.5;
