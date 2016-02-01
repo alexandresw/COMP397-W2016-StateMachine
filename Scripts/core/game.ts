@@ -11,6 +11,7 @@ var scene:number;
 
 // Game Scenes
 var menu:scenes.Menu;
+var play:scenes.Play;
 
 function init():void {
     // create a reference the HTML canvas Element
@@ -71,13 +72,21 @@ function changeScene(): void {
             stage.removeAllChildren();
             menu = new scenes.Menu();
             currentScene = menu;
-            console.log("Starting Menu Scene");
+            console.log("Starting MENU Scene");
             break;
         case config.Scene.PLAY:
             // show the play scene
+            stage.removeAllChildren();
+            play = new scenes.Play();
+            currentScene = play;
+            console.log("Starting PLAY Scene");
             break;
         case config.Scene.OVER:
             // show the game over scene
+            /* stage.removeAllChildren();
+            over = new scenes.Over();
+            currentScene = over;
+            console.log("Starting OVER Scene"); */
             break;
     }
 
