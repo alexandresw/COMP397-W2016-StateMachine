@@ -23,7 +23,7 @@ var scenes;
             this._overLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._overLabel);
             // add the BACK button to the OVER scene
-            this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
+            this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
             // BACK Button event listener
             this._backButton.on("click", this._backButtonClick, this);

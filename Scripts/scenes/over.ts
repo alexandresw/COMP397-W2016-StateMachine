@@ -26,7 +26,7 @@ module scenes {
             // add the BACK button to the OVER scene
             this._backButton = new objects.Button(
                 "BackButton",
-                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_X,
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
            
