@@ -1,9 +1,15 @@
 var config;
 (function (config) {
-    // State Constants
-    config.MENU_STATE = 0;
-    config.PLAY_STATE = 1;
-    config.OVER_STATE = 2;
+    // Scene Constants
+    var Scene = (function () {
+        function Scene() {
+        }
+        Scene.MENU = 0;
+        Scene.PLAY = 1;
+        Scene.OVER = 2;
+        return Scene;
+    })();
+    config.Scene = Scene;
     // Screen Constants
     var Screen = (function () {
         function Screen() {
