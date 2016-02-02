@@ -5,8 +5,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var objects;
 (function (objects) {
+    // Scene Class
     var Scene = (function (_super) {
         __extends(Scene, _super);
+        // CONSTRUCTOR +++++++++++++++++++++++++++++
         function Scene() {
             _super.call(this);
             this.start();
@@ -15,7 +17,7 @@ var objects;
         Scene.prototype.start = function () {
             stage.addChild(this);
         };
-        // update game objects ib my scene
+        // update game objects in my scene
         Scene.prototype.update = function () {
         };
         return Scene;
